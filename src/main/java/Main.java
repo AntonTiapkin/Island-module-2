@@ -1,7 +1,7 @@
-import com.javarush.island.tyapkin.PrintStatictic;
-import com.javarush.island.tyapkin.Settings;
-import com.javarush.island.tyapkin.SimulateLife;
-import com.javarush.island.tyapkin.Island.Island;
+import App.PrintStatictic;
+import App.Settings;
+import App.SimulateLife;
+import Island.Island;
 
 import java.util.concurrent.*;
 
