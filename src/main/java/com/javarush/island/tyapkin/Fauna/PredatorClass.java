@@ -1,4 +1,4 @@
-package Fauna;
+package com.javarush.island.tyapkin.Fauna;
 
 import com.javarush.island.tyapkin.Settings;
 

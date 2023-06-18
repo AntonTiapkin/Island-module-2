@@ -1,19 +1,20 @@
-package Fauna.Herbivores;
+package com.javarush.island.tyapkin.Fauna.Herbivores;
+
 
 import com.javarush.island.tyapkin.Settings;
-import Fauna.Animal;
-import Fauna.Herbivor;
-import Fauna.HerbivoreClass;
+import com.javarush.island.tyapkin.Fauna.Animal;
+import com.javarush.island.tyapkin.Fauna.Herbivor;
+import com.javarush.island.tyapkin.Fauna.HerbivoreClass;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Duck extends HerbivoreClass implements Herbivor {
+public class Hamster extends HerbivoreClass implements Herbivor {
 
-    private static int maxOnCell = Settings.duckMaxOnCell;
+    private static int maxOnCell = Settings.hamsterMaxOnCell;
 
-    public Duck() {
-        super(1, 1, 0.15, 4);
+    public Hamster() {
+        super(0.03, 1, 0.0075, 3);
     }
 
     public static int getMaxOnCell() {

@@ -1,4 +1,4 @@
-package Island;
+package com.javarush.island.tyapkin.Island;
 
 import com.javarush.island.tyapkin.Settings;
 

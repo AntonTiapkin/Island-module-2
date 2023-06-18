@@ -1,6 +1,6 @@
 package com.javarush.island.tyapkin;
 
-import Island.Cell;
+import com.javarush.island.tyapkin.Island.Cell;
 
 public class SimulateLife implements Runnable {
 

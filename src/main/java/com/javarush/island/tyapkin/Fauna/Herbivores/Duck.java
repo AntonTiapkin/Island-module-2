@@ -1,20 +1,19 @@
-package Fauna.Herbivores;
-
+package com.javarush.island.tyapkin.Fauna.Herbivores;
 
 import com.javarush.island.tyapkin.Settings;
-import Fauna.Animal;
-import Fauna.Herbivor;
-import Fauna.HerbivoreClass;
+import com.javarush.island.tyapkin.Fauna.Animal;
+import com.javarush.island.tyapkin.Fauna.Herbivor;
+import com.javarush.island.tyapkin.Fauna.HerbivoreClass;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Boar extends HerbivoreClass implements Herbivor {
+public class Duck extends HerbivoreClass implements Herbivor {
 
-    private static int maxOnCell = Settings.boarMaxOnCell;
+    private static int maxOnCell = Settings.duckMaxOnCell;
 
-    public Boar() {
-        super(47, 2, 7, 8);
+    public Duck() {
+        super(1, 1, 0.15, 4);
     }
 
     public static int getMaxOnCell() {
@@ -26,21 +25,14 @@ public class Boar extends HerbivoreClass implements Herbivor {
         try {
             if (this.getSatiety() < this.getMaxSatiety()) {
                 int eatChance = ThreadLocalRandom.current().nextInt(0, 100);
-                if (eatChance > 50) {
+                if (eatChance > 10) {
                     double diff = this.getMaxSatiety() - this.getSatiety();
                     if (listOfFood.size() > diff) {
                         this.setSatiety(this.getMaxSatiety());
                         this.setStarvingTime(this.getMaxStarvingTime());
                         listOfFood.subList(0, (int) diff).clear();
                     }
-                } else if (eatChance > 10 && eatChance < 50) {
-                    for (Object predator : listOfFood1) {
-                        Animal predator1 = (Animal) predator;
-                        if (predator1.getClass().getSimpleName().equals("Hamster")) {
-                            listOfFood1.remove(predator);
-                        }
-                    }
-                } else if (eatChance < 10) {
+                } else {
                     for (Object predator : listOfFood1) {
                         Animal predator1 = (Animal) predator;
                         if (predator1.getClass().getSimpleName().equals("Caterpillar")) {

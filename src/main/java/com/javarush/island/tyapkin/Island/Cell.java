@@ -1,12 +1,11 @@
-package Island;
+package com.javarush.island.tyapkin.Island;
 
-import com.javarush.island.tyapkin.*;
-import Fauna.Animal;
-import Fauna.Herb;
-import Fauna.Herbivor;
-import Fauna.Herbivores.*;
-import Fauna.Predator;
-import Fauna.Predators.*;
+import com.javarush.island.tyapkin.Fauna.Animal;
+import com.javarush.island.tyapkin.Fauna.Herb;
+import com.javarush.island.tyapkin.Fauna.Herbivor;
+import com.javarush.island.tyapkin.Fauna.Herbivores.*;
+import com.javarush.island.tyapkin.Fauna.Predator;
+import com.javarush.island.tyapkin.Fauna.Predators.*;
 import com.javarush.island.tyapkin.FaunaMovement;
 import com.javarush.island.tyapkin.GeneratorFauna;
 import com.javarush.island.tyapkin.ScanClasses;
