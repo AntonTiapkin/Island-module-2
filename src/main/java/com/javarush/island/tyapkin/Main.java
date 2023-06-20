@@ -24,7 +24,8 @@ public class Main {
         ScheduledExecutorService sesSimulateLife = Executors.newScheduledThreadPool(10);
         //Переодически запускаем таски
         ScheduledFuture<?> sF = sesStatictic.scheduleAtFixedRate(prs, 0, 3, TimeUnit.SECONDS);
-        ScheduledFuture<?> simulateLife = sesSimulateLife.scheduleAtFixedRate(simLife, 1, 1, TimeUnit.SECONDS);
+        ScheduledFuture<?> simulateLife = sesSimulateLife.
+                scheduleAtFixedRate(simLife, 1, 1, TimeUnit.SECONDS);
 
         //некий вариант ограничения. Все должно иметь конец =)
         int iter = 0;
