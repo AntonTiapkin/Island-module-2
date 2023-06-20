@@ -1,5 +1,7 @@
 package com.javarush.island.tyapkin.App;
 
+
+
 public class ConstantVoid {
 
     public static String INDENT = "-------------------------------------------------------";

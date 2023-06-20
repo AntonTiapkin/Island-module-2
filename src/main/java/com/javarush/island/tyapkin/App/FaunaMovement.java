@@ -1,10 +1,11 @@
 package com.javarush.island.tyapkin.App;
 
 
-import com.javarush.island.tyapkin.Fauna.Animal;
-import com.javarush.island.tyapkin.Fauna.Herbivor;
-import com.javarush.island.tyapkin.Fauna.Predator;
+import Fauna.Animal;
+import Fauna.Herbivor;
+import Fauna.Predator;
 import com.javarush.island.tyapkin.Island.Cell;
+
 
 import java.lang.reflect.Field;
 import java.util.List;

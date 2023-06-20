@@ -1,6 +1,7 @@
-package com.javarush.island.tyapkin.Fauna;
+package Fauna;
 
 import com.javarush.island.tyapkin.App.Settings;
+
 
 import java.util.List;
 import java.util.Map;

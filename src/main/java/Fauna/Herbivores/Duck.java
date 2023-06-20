@@ -1,9 +1,10 @@
-package com.javarush.island.tyapkin.Fauna.Herbivores;
+package Fauna.Herbivores;
 
 import com.javarush.island.tyapkin.App.Settings;
-import com.javarush.island.tyapkin.Fauna.Animal;
-import com.javarush.island.tyapkin.Fauna.Herbivor;
-import com.javarush.island.tyapkin.Fauna.HerbivoreClass;
+import Fauna.Animal;
+import Fauna.Herbivor;
+import Fauna.HerbivoreClass;
+
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;

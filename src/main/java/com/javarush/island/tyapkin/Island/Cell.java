@@ -1,15 +1,18 @@
 package com.javarush.island.tyapkin.Island;
 
+//import Fauna.Predators.*;
+
+import Fauna.Herbivores.*;
+import Fauna.Predators.*;
 import com.javarush.island.tyapkin.App.FaunaMovement;
 import com.javarush.island.tyapkin.App.GeneratorFauna;
 import com.javarush.island.tyapkin.App.ScanClasses;
 import com.javarush.island.tyapkin.App.Settings;
-import com.javarush.island.tyapkin.Fauna.Animal;
-import com.javarush.island.tyapkin.Fauna.Herb;
-import com.javarush.island.tyapkin.Fauna.Herbivor;
-import com.javarush.island.tyapkin.Fauna.Herbivores.*;
-import com.javarush.island.tyapkin.Fauna.Predator;
-import com.javarush.island.tyapkin.Fauna.Predators.*;
+import Fauna.Animal;
+import Fauna.Herb;
+import Fauna.Herbivor;
+import Fauna.Predator;
+
 
 import java.util.List;
 import java.util.Set;
@@ -19,14 +22,14 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Cell {
     //Объект генерирующий фауну
 
-    GeneratorFauna generatorFauna = new GeneratorFauna();
+ GeneratorFauna generatorFauna = new GeneratorFauna();
 
     //Объект отвечающий за передвижения
-    FaunaMovement faunaMovement = new FaunaMovement();
+FaunaMovement faunaMovement = new FaunaMovement();
 
     //Сеты с классами из пакетов Fauna.Herbivores и Fauna.Predators
-    Set<Class> predatorsClasses = ScanClasses.getPredatorsClasses();
-    Set<Class> herbivoresClasses = ScanClasses.getHerbivoresClasses();
+ Set<Class> predatorsClasses = ScanClasses.getPredatorsClasses();
+Set<Class> herbivoresClasses = ScanClasses.getHerbivoresClasses();
 
     private final List<Animal> predators = generatorFauna.generateFauna(predatorsClasses);
 

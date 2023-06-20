@@ -1,8 +1,7 @@
 package com.javarush.island.tyapkin.App;
 
 
-import com.javarush.island.tyapkin.Fauna.Animal;
-
+import Fauna.Animal;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -42,7 +41,7 @@ public class GeneratorFauna {
         return faunaArray;
     }
 
-    public void reproductionFauna(Set<Class> faunaClasses, List<Animal> fauna) {
+    public void reproductionFauna(Set<Class> faunaClasses,List<Animal> fauna) {
         //Обходим Set с классами, ищем объект этого класса в List и считаем особей
         for (Class c : faunaClasses) {
             int reproductionChance = (int) (Math.random() * 2 + 1);

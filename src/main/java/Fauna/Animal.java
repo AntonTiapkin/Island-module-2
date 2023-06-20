@@ -1,6 +1,7 @@
-package com.javarush.island.tyapkin.Fauna;
+package Fauna;
 
 import com.javarush.island.tyapkin.App.MovementDirection;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
@@ -26,7 +27,7 @@ public abstract class Animal {
     //что бы можно было выбрать рацион
     public abstract void eat(List<?> listOfFood, List<?> listOfFood1);
 
-    public MovementDirection setDirection() {
+    public @Nullable MovementDirection setDirection() {
         MovementDirection movementDirection;
 
         int moveDirection = ThreadLocalRandom.current().nextInt(0, 4);

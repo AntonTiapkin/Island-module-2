@@ -1,8 +1,8 @@
-package com.javarush.island.tyapkin.Fauna.Predators;
+package Fauna.Predators;
 
 import com.javarush.island.tyapkin.App.Settings;
-import com.javarush.island.tyapkin.Fauna.Predator;
-import com.javarush.island.tyapkin.Fauna.PredatorClass;
+import Fauna.Predator;
+import Fauna.PredatorClass;
 
 public class Wolf extends PredatorClass implements Predator {
 

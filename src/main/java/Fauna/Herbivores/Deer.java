@@ -1,9 +1,9 @@
-package com.javarush.island.tyapkin.Fauna.Herbivores;
+package Fauna.Herbivores;
 
 
 import com.javarush.island.tyapkin.App.Settings;
-import com.javarush.island.tyapkin.Fauna.Herbivor;
-import com.javarush.island.tyapkin.Fauna.HerbivoreClass;
+import Fauna.Herbivor;
+import Fauna.HerbivoreClass;
 
 public class Deer extends HerbivoreClass implements Herbivor {
 

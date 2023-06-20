@@ -1,4 +1,6 @@
-package com.javarush.island.tyapkin.Fauna;
+package Fauna;
+
+
 
 import java.util.List;
 

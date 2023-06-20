@@ -1,6 +1,7 @@
 package com.javarush.island.tyapkin.App;
 
 import com.javarush.island.tyapkin.Island.Cell;
+import org.jetbrains.annotations.NotNull;
 
 public class SimulateLife implements Runnable {
 

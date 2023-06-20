@@ -6,7 +6,11 @@ import com.javarush.island.tyapkin.App.Settings;
 import com.javarush.island.tyapkin.App.SimulateLife;
 import com.javarush.island.tyapkin.Island.Island;
 
-import java.util.concurrent.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
 public class Main {
     public static void main(String[] args) {
         //инициализируем класс с настройками, что бы сработал блок инициализации.
@@ -33,7 +37,7 @@ public class Main {
             try {
                 Thread.sleep(3000);
                 iter++;
-                if (iter > 5) {
+                if (iter > 1) {
                     System.out.println();
                     sF.cancel(true);
                     simulateLife.cancel(true);
@@ -46,5 +50,4 @@ public class Main {
             }
         }
     }
-
 }
