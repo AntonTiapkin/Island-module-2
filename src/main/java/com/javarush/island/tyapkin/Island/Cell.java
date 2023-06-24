@@ -1,17 +1,17 @@
 package com.javarush.island.tyapkin.Island;
 
-//import Fauna.Predators.*;
+//import com.javarush.island.tyapkin.Fauna.Predators.*;
 
-import Fauna.Herbivores.*;
-import Fauna.Predators.*;
+import com.javarush.island.tyapkin.Fauna.Herbivores.*;
+import com.javarush.island.tyapkin.Fauna.Predators.*;
 import com.javarush.island.tyapkin.App.FaunaMovement;
 import com.javarush.island.tyapkin.App.GeneratorFauna;
 import com.javarush.island.tyapkin.App.ScanClasses;
 import com.javarush.island.tyapkin.App.Settings;
-import Fauna.Animal;
-import Fauna.Herb;
-import Fauna.Herbivor;
-import Fauna.Predator;
+import com.javarush.island.tyapkin.Fauna.Animal;
+import com.javarush.island.tyapkin.Fauna.Herb;
+import com.javarush.island.tyapkin.Fauna.Herbivor;
+import com.javarush.island.tyapkin.Fauna.Predator;
 
 
 import java.util.List;
@@ -27,7 +27,7 @@ public class Cell {
     //Объект отвечающий за передвижения
 FaunaMovement faunaMovement = new FaunaMovement();
 
-    //Сеты с классами из пакетов Fauna.Herbivores и Fauna.Predators
+    //Сеты с классами из пакетов com.javarush.island.tyapkin.Fauna.Herbivores и com.javarush.island.tyapkin.Fauna.Predators
  Set<Class> predatorsClasses = ScanClasses.getPredatorsClasses();
 Set<Class> herbivoresClasses = ScanClasses.getHerbivoresClasses();
 

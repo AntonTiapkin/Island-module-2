@@ -1,8 +1,8 @@
-package Fauna.Predators;
+package com.javarush.island.tyapkin.Fauna.Predators;
 
 import com.javarush.island.tyapkin.App.Settings;
-import Fauna.Predator;
-import Fauna.PredatorClass;
+import com.javarush.island.tyapkin.Fauna.Predator;
+import com.javarush.island.tyapkin.Fauna.PredatorClass;
 
 public class Fox extends PredatorClass implements Predator {
 

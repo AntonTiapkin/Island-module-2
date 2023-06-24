@@ -1,9 +1,9 @@
-package Fauna.Herbivores;
+package com.javarush.island.tyapkin.Fauna.Herbivores;
 
 
 import com.javarush.island.tyapkin.App.Settings;
-import Fauna.Herbivor;
-import Fauna.HerbivoreClass;
+import com.javarush.island.tyapkin.Fauna.Herbivor;
+import com.javarush.island.tyapkin.Fauna.HerbivoreClass;
 
 public class Goat extends HerbivoreClass implements Herbivor {
 

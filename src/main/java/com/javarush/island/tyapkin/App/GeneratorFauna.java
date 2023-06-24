@@ -1,7 +1,7 @@
 package com.javarush.island.tyapkin.App;
 
 
-import Fauna.Animal;
+import com.javarush.island.tyapkin.Fauna.Animal;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

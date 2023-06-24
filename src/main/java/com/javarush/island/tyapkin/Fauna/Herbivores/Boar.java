@@ -1,10 +1,10 @@
-package Fauna.Herbivores;
+package com.javarush.island.tyapkin.Fauna.Herbivores;
 
 
 import com.javarush.island.tyapkin.App.Settings;
-import Fauna.Animal;
-import Fauna.Herbivor;
-import Fauna.HerbivoreClass;
+import com.javarush.island.tyapkin.Fauna.Animal;
+import com.javarush.island.tyapkin.Fauna.Herbivor;
+import com.javarush.island.tyapkin.Fauna.HerbivoreClass;
 
 
 import java.util.List;
